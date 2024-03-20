@@ -1,10 +1,42 @@
 <!-- import {Component} from "@component/schemas"; -->
-<!-- <h1>Bem vindo!</h1> -->
+
+<router-outlet></router-outlet>
+
+<!-- <h1>Bem vindo!</h1>  -->
+
+
+<!-- <div class="content-login">
+    <form class="content-form" formGroup="loginForm">
+        <div>
+            <div>
+                <input class="input-login" placeholder="email" formControlName="email" />
+            </div>
+            <div class="error-message"
+                ngIf="loginForm.get('email')?.errors?.required && loginForm.get('email')?.touched?">
+                Required field!
+            </div>
+            <div class="error-message" ngIf="loginForm.get('email')?.errors?.email && loginForm.get('email')?.touched?">
+                Email format is invalid!
+            </div>
+            <div>
+                <input class="input-login" type="password" placeholder="email" formControlName="email" />
+            </div>
+            <div class="error-message"
+                ngIf="loginForm.get('password')?.errors?.required && loginForm.get('password')?.touched?">
+                Obrigatory field!
+            </div>
+        </div>
+    </form>
+</div> -->
+
+
+
 <!-- <app-custom-card></app-custom-card> -->
 
-<!DOCTYPE html>
-<html lang="pt">
-<head>
+<!-- <!DOCTYPE html>
+<html lang="pt"> -->
+
+<!-- <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
@@ -13,7 +45,7 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: gray; /* Cor de fundo cinza */
+            background-color: gray;
         }
 
         .login-container {
@@ -54,17 +86,25 @@
             background-color: #0056b3;
         }
     </style>
-</head>
-<body>
+</head> -->
 
-<div class="login-container">
-    <h2>Tela de Login</h2>
-    <form action="#">
-        <input type="text" placeholder="Usuário" required>
-        <input type="password" placeholder="Senha" required>
-        <input type="submit" value="Entrar">
-    </form>
-</div>
+<!-- <body>
 
+    <div class="login-container">
+        <h2>Tela de Login</h2>
+        <form action="#">
+            <input type="text" placeholder="Usuário" required>
+            <input type="password" placeholder="Senha" required>
+            <input type="submit" value="Entrar">
+        </form>
+        <br>
+        <span><a routerLink="home" routerLinkActive="active">Redirect</a></span>
+    </div>
+    <div>
+        <span class="nav-item"><a routerLink="home">
+                <button (click)="onClick();">Registros</button>
+            </a></span>
+    </div>
 </body>
-</html>
+
+</html> -->

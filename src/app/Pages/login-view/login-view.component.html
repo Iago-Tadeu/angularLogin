@@ -1,0 +1,44 @@
+<div class="content-login">
+    <form class="content-form" formGroup="loginForm">
+        <div>
+            <div>
+                <input class="input-login" placeholder="email" formControlName="email" />
+            </div>
+            <div class="error-message"
+                ngIf="loginForm.get('email')?.errors?.required && loginForm.get('email')?.touched?">
+                Required field!
+            </div>
+            <div class="error-message" ngIf="loginForm.get('email')?.errors?.email && loginForm.get('email')?.touched?">
+                Email format is invalid!
+            </div>
+            <div>
+                <input class="input-login" type="password" placeholder="email" formControlName="email" />
+            </div>
+            <div class="error-message"
+                ngIf="loginForm.get('password')?.errors?.required && loginForm.get('password')?.touched?">
+                Obrigatory field!
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<div class="login-container">
+    <h2>Insira seus dados</h2>
+    <form action="#">
+        <input type="text" placeholder="Usuário" required>
+        <input type="password" placeholder="Senha" required>
+        <input type="submit" value="Entrar">
+    </form>
+    <br>
+    <span><a routerLink="/home">Redirect</a></span>
+</div>
+<div>
+    <span class="nav-item"><a routerLink="/home">
+            <button (click)="onClick();">Registros</button></a></span>
+
+</div>
+<!-- <nav>
+    <a routerLink="/home">Dashboard</a>
+    <a routerLink="/heroes">Heroes</a>
+</nav> -->
